@@ -4,8 +4,8 @@
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "https://grahamflas.github.io/codechella-2023-pwa-demo/",
+  "start_url": "https://grahamflas.github.io/codechella-2023-pwa-demo/",
   "icons": [
     {
       "src": "https://via.placeholder.com/48",
