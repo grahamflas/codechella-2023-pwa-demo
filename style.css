@@ -32,6 +32,10 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.download-button {
+.download-button-container {
  color: #d4ac57;
+}
+
+.hidden {
+  display: none !important;
 }

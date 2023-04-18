@@ -1,5 +1,5 @@
-const divInstall = document.getElementById("installContainer");
-const butInstall = document.getElementById("butInstall");
+const liInstall = document.getElementById("install-container");
+const buttonInstall = document.getElementById("install-button");
 
 /* Put code here */
 
@@ -30,3 +30,13 @@ if (window.self !== window.top) {
   link.href = window.location.href;
   requireTopLevel.classList.remove("hidden");
 }
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent the mini-infobar from appearing on mobile.
+  event.preventDefault();
+  console.log('👍', 'beforeinstallprompt', event);
+  // Stash the event so it can be triggered later.
+  window.deferredPrompt = event;
+  // Remove the 'hidden' class from the install button container.
+  liInstall.classList.toggle('hidden', false);
+});
