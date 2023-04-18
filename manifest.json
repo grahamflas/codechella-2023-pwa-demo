@@ -1,0 +1,9 @@
+{
+  "name": "CommonLit",
+  "theme_color": "#447e86",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
