@@ -35,5 +35,5 @@ buttonInstall.addEventListener('click', async () => {
   // prompt() can only be called once.
   window.deferredPrompt = null;
   // Hide the install button.
-  divInstall.classList.toggle('hidden', true);
+  liInstall.classList.toggle('hidden', true);
 });
