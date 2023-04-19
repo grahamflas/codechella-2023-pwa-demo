@@ -18,10 +18,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 li {
@@ -32,10 +34,33 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.download-button-container {
- color: #d4ac57;
+.cl-button {
+  border: 0.1rem solid transparent;
+  border-radius: 2.25rem;
+  box-shadow: 0 0.1rem 0 rgba(255, 255, 255, 0.08) inset, 0 0.1rem 0.2rem rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.cl-primary-btn {
+    background-color: #447e86;
+    color: #fff;
+  }
 }
 
 .hidden {
   display: none !important;
+}
+
+.offline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  img {
+    margin: 3rem auto;
+  }
 }
