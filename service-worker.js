@@ -1,4 +1,3 @@
-const OFFLINE_VERSION = 1;
 const CACHE_NAME = 'offline';
 const OFFLINE_URL = 'offline.html';
 
@@ -20,7 +19,7 @@ self.addEventListener('fetch', function(event) {
   event.respondWith((async () => {
     try {
       const networkResponse = await fetch(event.request);
-      
+
       return networkResponse;
     } catch (error) {
       console.log('[Service Worker] Fetch failed; returning offline page instead.', error);
